@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .logo {
+    height: 50px;
+    float: left;
+    margin-left: 1rem;
+}
+
+nav {
+    float: right;
+    margin-right: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: #f4f4f4;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.feature-card {
+    flex: 1;
+    background: #e2e2e2;
+    padding: 1rem;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+/* About & Contact Sections */
+.about, .contact {
+    padding: 2rem 0;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.7rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .menu-btn {
+        display: block;
+        color: #fff;
+        float: right;
+        margin-right: 1rem;
+    }
+}
